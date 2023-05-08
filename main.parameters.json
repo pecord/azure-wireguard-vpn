@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "centralus"
+    },
+    "vmSize": {
+      "value": "Standard_D2s_v3"
+    },
+    "adminUsername": {
+      "value": "pi"
+    },
+    "scriptUri": {
+      "value": "https://gist.githubusercontent.com/pecord/24a9a3f2f26ac237ab9380934d0471fc/raw/28195212e9b2392e80f3164f8be4f55d31fbab9b/wg-install-noninteractive.sh"
+    },
+    "scriptFileName": {
+      "value": "wg-install-noninteractive.sh"
+    }
+  }
+}
