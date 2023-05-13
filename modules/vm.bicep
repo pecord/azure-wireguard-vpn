@@ -3,7 +3,7 @@ param location string
 param vmSize string
 param adminUsername string
 param adminPublicKey string
-param vnetId string
+param subnetId string
 param nsgId string
 param publicIPId string
 param scriptUri string
@@ -19,7 +19,7 @@ resource nic 'Microsoft.Network/networkInterfaces@2022-11-01' = {
         properties: {
           privateIPAllocationMethod: 'Dynamic'
           subnet: {
-            id: '${vnetId}/subnets/default'
+            id: subnetId
           }
           publicIPAddress: {
             id: publicIPId

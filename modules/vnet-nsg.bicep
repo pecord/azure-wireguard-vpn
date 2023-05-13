@@ -1,7 +1,7 @@
 // vnet-nsg.bicep
 param location string
 
-resource vnet 'Microsoft.Network/virtualNetworks@2021-02-01' = {
+resource vnet 'Microsoft.Network/virtualNetworks@2022-11-01' = {
   name: 'wireguardVNet'
   location: location
   properties: {
@@ -55,5 +55,5 @@ resource nsg 'Microsoft.Network/networkSecurityGroups@2022-11-01' = {
   }
 }
 
-output vnetId string = vnet.id
 output nsgId string = nsg.id
+output subnetId string = vnet.properties.subnets[0].id

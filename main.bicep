@@ -30,7 +30,7 @@ module vm 'modules/vm.bicep' = {
     vmSize: vmSize
     adminUsername: adminUsername
     adminPublicKey: adminPublicKey
-    vnetId: vnetNSG.outputs.vnetId
+    subnetId: vnetNSG.outputs.subnetId
     nsgId: vnetNSG.outputs.nsgId
     publicIPId: publicIP.outputs.publicIPId
     scriptUri: scriptUri
