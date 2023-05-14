@@ -1,5 +1,5 @@
 // main.bicep
-param location string = 'centralus'
+param location string = resourceGroup().location
 param vmSize string = 'Standard_D2s_v3'
 param adminUsername string
 

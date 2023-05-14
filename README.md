@@ -27,3 +27,6 @@ This repository contains the necessary files to deploy a WireGuard VPN server on
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+## TODO
+1. make it use the public ip for the default profiles
